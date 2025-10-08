@@ -1,6 +1,12 @@
 package com.example.rest_service;
 
 public class TodoEntry {
-    private String id;
+    public TodoEntry() {}
+
+    public TodoEntry(String title) {
+                this.title = title;
+    }
+
+    private String title;
     private String description;
 }
